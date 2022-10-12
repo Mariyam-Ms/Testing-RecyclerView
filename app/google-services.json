@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "50258676503",
+    "firebase_url": "https://list-images-rv-default-rtdb.firebaseio.com",
+    "project_id": "list-images-rv",
+    "storage_bucket": "list-images-rv.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:50258676503:android:7c81e03be378e74bb40552",
+        "android_client_info": {
+          "package_name": "com.project1.listimagesfirebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "50258676503-5c4iu29ik5tcb14ieg958ljc6k0h3ltt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD8dg4ZQ-GSTfd1treVWHb_KGx9LjJfn1c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "50258676503-5c4iu29ik5tcb14ieg958ljc6k0h3ltt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
