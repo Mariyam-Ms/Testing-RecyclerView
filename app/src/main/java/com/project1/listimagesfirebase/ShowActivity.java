@@ -1,6 +1,7 @@
 package com.project1.listimagesfirebase;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -41,6 +42,9 @@ public class ShowActivity extends AppCompatActivity {
                 Model model=dataSnapshot.getValue(Model.class);
                 mlist.add(model);
             }
+                Log.d("TAG", "onDataChange: "+mlist);
+
+
             myAdapter.notifyDataSetChanged();
             }
 

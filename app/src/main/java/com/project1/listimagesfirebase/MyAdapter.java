@@ -1,6 +1,7 @@
 package com.project1.listimagesfirebase;
 
 import android.content.Context;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,16 +15,18 @@ import com.bumptech.glide.Glide;
 
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
 
-    private ArrayList<Model> modelArrayList;
+    private List<Model> modelArrayList;
     private Context context;
 
-    public MyAdapter( Context context, ArrayList<Model> modelArrayList) {
-        this.modelArrayList = modelArrayList;
+    public MyAdapter( Context context,List<Model>modelList) {
+        this.modelArrayList=modelList;
         this.context = context;
     }
+
 
 
     @NonNull
@@ -41,7 +44,13 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
 
     @Override
     public int getItemCount() {
-        return modelArrayList.size();
+
+        if(modelArrayList==null){
+            return 0;
+
+        }else{
+            return modelArrayList.size();
+        }
     }
 
     public static class MyViewHolder extends RecyclerView.ViewHolder{
